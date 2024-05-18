@@ -1,0 +1,178 @@
+:root {
+      --color-primary: #6c6cfd;
+      --color-danger: #ff7782;
+      --color-success: #41f1b6;
+      --color-warning: #ffbb55;
+      --color-info-dark: #758394;
+      --color-info-light: #dce1eb;
+      --color-dark: #363949;
+      --color-light: rgba(15, 15, 15, 0.18);
+      --color-primary-variant: #111e88;
+      --color-dark-variant: #677483;
+
+      --card-border-radius: 2rem;
+      --border-radius-1: 0.4rem;
+      --border-radius-2: 0.8rem;
+      --border-radius-3: 1.2rem;
+
+      --card-padding: 1.8rem;
+      --padding-1: 1.2rem;
+
+      --box-shadow: 0 2rem 3 rem var(--color-light);
+}
+
+
+* {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      appearance: none;
+      border: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 14px;
+}
+
+
+
+body {
+      width: 100vw;
+      height: 100vh;
+      font-family: poppins, sans-serif;
+      font-size: 0.88rem;
+      user-select: none;
+      overflow-x: hidden;
+}
+
+.container {
+      display: grid;
+      width: 96%;
+      margin: 0 auto;
+      gap: 1.8rem;
+      grid-template-columns: 14rem auto 23rem;
+}
+
+img {
+      display: block;
+      width: 100%;
+      height: 100%;
+}
+
+h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+}
+
+h2 {
+      font-size: 1.84rem;
+}
+
+h3 {
+      font-size: 0.87rem;
+}
+
+h4 {
+      font-size: 0.8rem;
+}
+
+h5 {
+      font-size: 0.77rem;
+}
+
+small {
+      font-size: 0.75rem;
+}
+
+.profile-photo {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      overflow: hidden;
+}
+.color {
+      color: #0d6efd;
+
+}
+ .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.4rem;
+}
+
+ .logo {
+      display: flex;
+      gap: 0.8rem;
+      font-size: 17px;
+}
+
+ .logo img {
+      width: 3rem;
+      height: 3rem;
+}
+
+ h3 {
+      font-weight: 500;
+}
+
+ .font {
+      font-size: 24px;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+ .sidebar a {
+      display: flex;
+      margin-left: 1rem;
+      gap: 1rem;
+      align-items: center;
+      position: relative;
+      height: 3.6rem;
+      transition: all 400ms ease;
+}
+
+ .sidebar a span {
+      font-size: 2rem;
+      transition: all 400ms ease;
+}
+
+  .logout {
+      position: absolute;
+      bottom: 6rem;
+      width: 100%;
+}
+
+.sidebar a.active {
+      background: var(--color-light);
+      color: var(--color-primary);
+      margin-left: 2rem;
+}
+
+ .sidebar a.active::before {
+      content: "";
+      width: 7px;
+      height: 100%;
+      background: var(--color-primary);
+}
+
+ .sidebar a.active span {
+      color: var(--color-primary);
+      margin-left: calc(1rem - 3px);
+}
+
+ .sidebar a.active:hover {
+      margin-left: 3rem;
+      color: var(--color-primary);
+}
+
+ .sidebar a:hover {
+      margin-left: 1rem;
+      color: var(--color-primary);
+}
+
+ .sidebar a:hover span {
+      margin-left: 1rem;
+}
